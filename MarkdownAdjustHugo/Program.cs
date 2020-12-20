@@ -22,7 +22,10 @@ namespace MarkdownAdjustHugo
             // 調整対象の情報を取得
             SetUp();
 
-            // Rinkerの変換を開始
+            // Twitterの変換
+            Twitter.Starter(TargetPostPath);
+
+            // Rinkerの変換
             Rinker.Starter(TargetPostPath);
         }
 
