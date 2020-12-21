@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.IO.Compression;
 
-namespace MarkdownAdjustHugo
+namespace ToolConsole.Utility
 {
     /// <summary>
     /// ディレクトリおよびファイル編集クラス

@@ -4,19 +4,20 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
+using ToolConsole.Utility;
 
 namespace MarkdownAdjustHugo
 {
     /// <summary>
     /// RinkerプラグインHTMLの整形
     /// </summary>
-    internal static class Rinker
+    public static class Rinker
     {
         /// <summary>
         /// Start
         /// </summary>
         /// <param name="path">対象パス</param>
-        internal static void Starter(string path)
+        public static void Starter(string path)
         {
             Console.WriteLine("\nプラグイン[Rinker]で生成されるHTMLを簡易的に変換します。");
             

@@ -4,19 +4,20 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
+using ToolConsole.Utility;
 
 namespace MarkdownAdjustHugo
 {
     /// <summary>
     /// Twitterの整形
     /// </summary>
-    internal static class Twitter
+    public static class Twitter
     {
         /// <summary>
         /// Start
         /// </summary>
         /// <param name="path">対象パス</param>
-        internal static void Starter(string path)
+        public static void Starter(string path)
         {
             Console.WriteLine("\nTwitterタグを変換します。");
             

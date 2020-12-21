@@ -1,7 +1,8 @@
 ﻿using System;
+using MarkdownAdjustHugo;
+using ToolConsole.Utility;
 
-
-namespace MarkdownAdjustHugo
+namespace ToolConsole
 {
     /// <summary>
     /// スタートアップクラス

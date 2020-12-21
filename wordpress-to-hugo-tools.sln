@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkdownAdjustHugo", "Markd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAndDirectory", "FileAndDirectory\FileAndDirectory.csproj", "{9FA744EF-42A8-41AA-9BD5-04BD1A65362B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolConsole", "ToolConsole\ToolConsole.csproj", "{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9FA744EF-42A8-41AA-9BD5-04BD1A65362B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FA744EF-42A8-41AA-9BD5-04BD1A65362B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FA744EF-42A8-41AA-9BD5-04BD1A65362B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
