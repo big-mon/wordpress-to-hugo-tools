@@ -38,7 +38,7 @@ namespace ToolConsole
         {
             var bkTime = DateTime.Now.ToString("yyyyMMHHmmss");
 
-            Console.Write("変換対象とするMarkdownの保存されたパスを指定してください：");
+            Console.Write("変換対象とするファイルの保存されたディレクトリのパスを指定してください：");
             TargetPostPath = Console.ReadLine();
             string backupName = TargetPostPath + "_" + bkTime;
 
