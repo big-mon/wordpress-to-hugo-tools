@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAndDirectory", "FileAnd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolConsole", "ToolConsole\ToolConsole.csproj", "{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCleaner", "ImageCleaner\ImageCleaner.csproj", "{C0C6CADB-AF19-4FAE-AB98-ED5DB6589629}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68059EDA-6606-43ED-A7C3-B0C1F8A3126B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C6CADB-AF19-4FAE-AB98-ED5DB6589629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C6CADB-AF19-4FAE-AB98-ED5DB6589629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C6CADB-AF19-4FAE-AB98-ED5DB6589629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C6CADB-AF19-4FAE-AB98-ED5DB6589629}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

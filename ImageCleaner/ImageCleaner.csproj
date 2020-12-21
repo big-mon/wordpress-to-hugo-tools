@@ -1,14 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FileAndDirectory\FileAndDirectory.csproj" />
-    <ProjectReference Include="..\ImageCleaner\ImageCleaner.csproj" />
-    <ProjectReference Include="..\MarkdownAdjustHugo\MarkdownAdjustHugo.csproj" />
   </ItemGroup>
 
 </Project>

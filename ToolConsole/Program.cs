@@ -1,6 +1,7 @@
 ﻿using MarkdownAdjustHugo;
 using System;
 using ToolConsole.Utility;
+using ImageCleaner;
 
 namespace ToolConsole
 {
@@ -21,6 +22,9 @@ namespace ToolConsole
         {
             // Markdownの編集
             CallAdjustMarkdown();
+
+            // 画像の整理
+            CallImageCleaner();
         }
 
         /// <summary>
@@ -62,6 +66,20 @@ namespace ToolConsole
 
             // Rinkerの変換
             Rinker.Starter(TargetPostPath);
+        }
+
+        /// <summary>
+        /// 画像整理機能の呼び出し
+        /// </summary>
+        private static void CallImageCleaner()
+        {
+            Console.WriteLine("WordPressが生成した様々な画像サイズ差分を整理します。\n");
+
+            // 調整対象の情報を取得
+            SetUp();
+
+            // 差分画像の削除
+            Images.Starter(TargetPostPath);
         }
     }
 }
