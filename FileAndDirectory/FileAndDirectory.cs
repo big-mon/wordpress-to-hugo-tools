@@ -6,7 +6,7 @@ namespace ToolConsole.Utility
     /// <summary>
     /// ディレクトリおよびファイル編集クラス
     /// </summary>
-    public class FileAndDirectory
+    public static class FileAndDirectory
     {
         /// <summary>
         /// 指定のディレクトリをコピー
