@@ -1,5 +1,5 @@
-﻿using System;
-using MarkdownAdjustHugo;
+﻿using MarkdownAdjustHugo;
+using System;
 using ToolConsole.Utility;
 
 namespace ToolConsole
@@ -63,6 +63,5 @@ namespace ToolConsole
             // Rinkerの変換
             Rinker.Starter(TargetPostPath);
         }
-
     }
 }

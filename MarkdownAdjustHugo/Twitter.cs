@@ -1,9 +1,9 @@
-﻿using System;
+﻿using HtmlAgilityPack;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using HtmlAgilityPack;
 using ToolConsole.Utility;
 
 namespace MarkdownAdjustHugo
@@ -20,7 +20,7 @@ namespace MarkdownAdjustHugo
         public static void Starter(string path)
         {
             Console.WriteLine("\nTwitterタグを変換します。");
-            
+
             // 実行可否を判定
             Console.Write("本機能を利用しますか？[y/n]：");
             bool isActive = Console.ReadLine().ToLower() == "y";
@@ -86,7 +86,7 @@ namespace MarkdownAdjustHugo
             for (int i = 0; i < nodes.Count; i++)
             {
                 HtmlNode node = nodes[i];
-                
+
                 HtmlNode tweetText = node.SelectSingleNode("(//blockquote[@class='twitter-tweet'])[" + (i + 1) + "]");
                 var body = tweetText.InnerHtml;
                 body = body.Replace("\n", "");
