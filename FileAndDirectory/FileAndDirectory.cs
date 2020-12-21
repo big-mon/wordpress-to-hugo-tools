@@ -61,10 +61,19 @@ namespace ToolConsole.Utility
         /// </summary>
         /// <param name="path">パス</param>
         /// <param name="type">拡張子(.md)</param>
-        /// <returns></returns>
+        /// <returns>パスの一覧</returns>
         public static string[] GetFiles(string path, string type)
         {
-            return Directory.GetFiles(path, "*" + type);
+            return Directory.GetFiles(path, "*" + type, SearchOption.AllDirectories);
+        }
+
+        /// <summary>
+        /// 指定のファイルを削除
+        /// </summary>
+        /// <param name="path">パス</param>
+        public static void DeleteFile(string path)
+        {
+            File.Delete(path);
         }
     }
 }
