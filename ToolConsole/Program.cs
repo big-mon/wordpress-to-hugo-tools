@@ -19,16 +19,8 @@ namespace ToolConsole
         /// </summary>
         private static void Main()
         {
-            Console.WriteLine("WordPressから取得した記事データをHugo向けに調整します。\n");
-
-            // 調整対象の情報を取得
-            SetUp();
-
-            // Twitterの変換
-            Twitter.Starter(TargetPostPath);
-
-            // Rinkerの変換
-            Rinker.Starter(TargetPostPath);
+            // Markdownの編集
+            CallAdjustMarkdown();
         }
 
         /// <summary>
@@ -54,5 +46,23 @@ namespace ToolConsole
                 Console.WriteLine("処理をスキップしました。\n");
             }
         }
+
+        /// <summary>
+        /// Markdown編集機能の呼び出し
+        /// </summary>
+        private static void CallAdjustMarkdown()
+        {
+            Console.WriteLine("WordPressから取得した記事データをHugo向けに調整します。\n");
+
+            // 調整対象の情報を取得
+            SetUp();
+
+            // Twitterの変換
+            Twitter.Starter(TargetPostPath);
+
+            // Rinkerの変換
+            Rinker.Starter(TargetPostPath);
+        }
+
     }
 }
