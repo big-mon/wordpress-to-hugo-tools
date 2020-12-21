@@ -32,7 +32,7 @@ namespace MarkdownAdjustHugo
             }
 
             // 処理実行
-            string[] markdowns = UtilityFileAndDirectory.GetFiles(path, ".md");
+            string[] markdowns = FileAndDirectory.GetFiles(path, ".md");
             foreach (string markdown in markdowns)
             {
                 ConvertTags(markdown);

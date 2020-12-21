@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace MarkdownAdjustHugo
 {
     /// <summary>
@@ -44,8 +45,8 @@ namespace MarkdownAdjustHugo
             bool isBackup = Console.ReadLine().ToLower() == "y";
             if (isBackup)
             {
-                UtilityFileAndDirectory.DirectoryCopy(TargetPostPath, backupName);
-                Console.WriteLine("-> " + UtilityFileAndDirectory.CompressionDirectory(backupName));
+                FileAndDirectory.DirectoryCopy(TargetPostPath, backupName);
+                Console.WriteLine("-> " + FileAndDirectory.CompressionDirectory(backupName));
             }
             else
             {

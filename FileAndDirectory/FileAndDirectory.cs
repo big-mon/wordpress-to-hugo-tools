@@ -3,14 +3,17 @@ using System.IO.Compression;
 
 namespace MarkdownAdjustHugo
 {
-    class UtilityFileAndDirectory
+    /// <summary>
+    /// ディレクトリおよびファイル編集クラス
+    /// </summary>
+    public class FileAndDirectory
     {
         /// <summary>
         /// 指定のディレクトリをコピー
         /// </summary>
         /// <param name="original">コピー元</param>
         /// <param name="copy">コピー先</param>
-        internal static void DirectoryCopy(string original, string copy)
+        public static void DirectoryCopy(string original, string copy)
         {
             DirectoryInfo dir = new DirectoryInfo(original);
             if (!dir.Exists) { throw new DirectoryNotFoundException("directory could not be found: " + original); }
@@ -40,7 +43,7 @@ namespace MarkdownAdjustHugo
         /// 指定のディレクトリをZip圧縮
         /// </summary>
         /// <param name="targetPath">圧縮元</param>
-        internal static string CompressionDirectory(string targetPath)
+        public static string CompressionDirectory(string targetPath)
         {
             var resultPath = targetPath + ".zip";
 
@@ -59,7 +62,7 @@ namespace MarkdownAdjustHugo
         /// <param name="path">パス</param>
         /// <param name="type">拡張子(.md)</param>
         /// <returns></returns>
-        internal static string[] GetFiles(string path, string type)
+        public static string[] GetFiles(string path, string type)
         {
             return Directory.GetFiles(path, "*" + type);
         }
