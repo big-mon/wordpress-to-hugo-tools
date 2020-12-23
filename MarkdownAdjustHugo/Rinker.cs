@@ -98,7 +98,7 @@ namespace MarkdownAdjustHugo
                 // 置換用のタグを作成
                 var html = new StringBuilder()
                     .Append("<div class='hugo-rinker'>")
-                    .Append("<a href='").Append(url).Append("' rel='noreferrer noopener external nofollow' targer='_blank'>")
+                    .Append("<a href='").Append(url).Append("' rel='noreferrer noopener external nofollow' target='_blank'>")
                     .Append("<img src='").Append(imgSrc).Append("' loading='lazy'>")
                     .Append("<span>").Append(title).Append("</span>")
                     .Append("</a>")
